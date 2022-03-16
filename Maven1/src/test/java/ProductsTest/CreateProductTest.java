@@ -27,10 +27,20 @@ public class CreateProductTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://localhost:8888");
 		
+		
+		
+		
+		
+		
 		String UP = "admin";
 		driver.findElement(By.xpath("//input[@name='user_name']")).sendKeys(UP);
 		driver.findElement(By.xpath("//input[@name='user_password']")).sendKeys(UP);
 		driver.findElement(By.xpath("//input[@id='submitButton']")).click();
+		
+		
+		
+		
+		
 		
 		String name = "Samsung A80";
 		driver.findElement(By.linkText("Products")).click();
